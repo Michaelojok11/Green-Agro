@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>  
-        #div1{
-            background-color: skyblue;
-            width: 33.33%;
-            float: right;
-            height: fit-content;
-        }
-        #div2{
-            background-color: skyblue;
-            width: 33.33%;
-            float: left;
-            height: fit-content;
-        }
-        #div3{
-            background-color: rgb(158, 121, 192);
-            width: 33.33%;
-            margin: auto;
-            height: fit-content;
-        }
+    <style>
+.row {
+      display: flex; /* equal height of the children */
+    }
+    .col1 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+    }   
+    .col2 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+    }   
+    .col3 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: blue;
+    } 
+
+
+    .row {
+      display: flex; /* equal height of the children */
+    }
+    .col1 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+    }   
+    .col2 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+    }   
+    .col3 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: blue;
+    } 
     </style>
     <title> Website of Green Agro</title>
     <link rel="stylesheet" href="styles.css">
@@ -29,6 +57,15 @@
 <h1 style= "color:darkolivegreen;text-align:center;border:2px dodgerblue;"> GREEN AGRIBUSINESS </h1>
 <p style="text-align: center;font-size:large ;"> Green Agribusiness is a company that deals in sustainable agriculture by using smart technology to support agriculture in a sustainable way </p>
 <p style="text-align: center"> <img src="image3.jpg" alt="agricultural photo" width="100%" height="4.5%"></p>
+
+
+<h2> Align two div side by side with html-code </h2>
+    <div class="row">
+      <div class="col1">Here we have placed two div side by side with equal height and width</div>
+      <div class="col2">Here we have placed two div side by side with equal height and width</div>
+      <div class="col3">Here we have placed two div side by side with equal height and width</div>
+    </div>
+
 
     <div id="div1"><h1 style="font-size: large; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: center;">CORE VALUES</h1><p>Integrity<br>Quality and Commitment</p><button type="button" onclick="alert('Responsibility, Accountability')"> Read More </button></div>
     <div id="div2"><h1 style="font-size: large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: center;">OUR MISSION</h1><p> To be the Number one solution for smart and sustainable agriculture in Europe and Africa</p><button type="button" onclick="alert('Integrity')"> Read More </button></div>
