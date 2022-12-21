@@ -5,30 +5,19 @@
 .row {
       display: flex; /* equal height of the children */
     }
-    .col1 {
+    .colheader1 {
       flex: 1; /* additionally, equal width */
       padding: 1em;
-      border: solid;
       margin: 10px;
-      background-color: beige;
+      float: left;
     }   
-    .col2 {
+    .colheader2 {
       flex: 1; /* additionally, equal width */
       padding: 1em;
-      border: solid;
       margin: 10px;
-      background-color: aqua;
+      float: right;
     }   
-    .col3 {
-      flex: 1; /* additionally, equal width */
-      padding: 1em;
-      border: solid;
-      margin: 10px;
-      background-color: blue;
-    } 
-
-
-    .row {
+      .row {
       display: flex; /* equal height of the children */
     }
     .col1 {
@@ -52,41 +41,69 @@
       margin: 10px;
       background-color: rgb(85, 102, 88);
     } 
+
+    .row {
+      display: flex; /* equal height of the children */
+    }
+    .colreadmore1 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: beige;
+      text-align: center;
+    }   
+    .colreadmore2 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color:beige;
+      text-align: center;
+    }   
+    .colreadmore3 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: beige;
+      text-align: center;
+    } 
     </style>
     <title> Website of Green Agro</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p style="text-align:center"><img src="Logo.jpg" alt="Company Logo"; width="250" height="100"></p>
+    <div class="row">
+        <div class="colheader1"><img src="Logo.jpg" alt="Green Agro Logo" width="350" height="150"></div>
+        <div class="colheader2">| HOME | ABOUT | SERVICES | CONTACT | BLOGS </div>
+    </div>
 <h1 style= "color:darkolivegreen;text-align:center;border:2px dodgerblue;"> GREEN AGRIBUSINESS </h1>
 <p style="text-align: center;font-size:large ;"> Green Agribusiness is a company that deals in sustainable agriculture by using smart technology to support agriculture in a sustainable way </p>
 <p style="text-align: center"> <img src="image3.jpg" alt="agricultural photo" width="100%" height="450"></p>
-
 <div class="row">
     <div class="column">
-        <p style="text-align: center;"><img src="planting.png" alt= "planting trees" width="30%;"></p>
+        <p style="text-align: center;"><img src="planting.png" alt= "planting trees" width="20%;"></p>
     </div>
     <div class="column">
-        <p style="text-align:center"><img src="planting.png" alt="planting trees" width="30%;"></p>
+        <p style="text-align:center"><img src="planting.png" alt="planting trees" width="20%;"></p>
         </div>
         <div class="column">
-            <p style="text-align: center;"><img src="planting.png" alt="planting trees" width="30%"></p>
+            <p style="text-align: center;"><img src="planting.png" alt="planting trees" width="20%"></p>
         </div>
-
 </div>
 
     <div class="row">
-      <div class="col1">OUR MISSION <br>To be the Number one solution for smart and sustainable agriculture in Europe and Africa</p></div>
-      <div class="col2">OUR VISION<br>To improve rural livelihoods and create value by providing sustainable food systems in Europe and Africa</p></div>
+      <div class="col1">OUR MISSION <br>To be the Number one solution for smart and sustainable agriculture in Europe and Africa button</div>
+      <div class="col2">OUR VISION<br>To improve rural livelihoods and create value by providing sustainable food systems in Europe and Africa</div>
       <div class="col3"> CORE VALUES <br> Integrity <br> Commitment</div>
     </div>
-
-
-    <div id="div1"><h1 style="font-size: large; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: center;">CORE VALUES</h1><p>Integrity<br>Quality and Commitment</p><button type="button" onclick="alert('Responsibility, Accountability')"> Read More </button></div>
-    <div id="div2"><h1 style="font-size: large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: center;">OUR MISSION</h1><p> To be the Number one solution for smart and sustainable agriculture in Europe and Africa</p><button type="button" onclick="alert('Integrity')"> Read More </button></div>
-    <div id="div3"><h1 style="font-size: large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center;">OUR VISION</h1><p>To improve rural livelihoods and create value by providing sustainable food systems in Europe and Africa</p><button type="button" onclick="alert('Leading in innovation')"> Read More </button></div>
+<div>
+    <div class="row">
+        <div class="colreadmore1"><button type="button" onclick="alert('Responsibility')">READMORE</button></div>
+        <div class="colreadmore2"><button type="button" onclick="('Integrity')">READMORE</button></div>
+        <div class="colreadmore3"><button type="button" onclick="alert('Leading in innovation')">READMORE</button></div>
+</div>
     <p style=" text-align:center;background-color:rgb(44, 32, 32); color: burlywood; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Copyright: Developer@greenagribusiness| Based in Sweden: Call +46729455878</p>
-
 </body>
 
 </html>
