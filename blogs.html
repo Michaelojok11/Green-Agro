@@ -23,59 +23,65 @@
       float: right;
       text-align: right;
     }   
-      .row {
-      display: flex; /* equal height of the children */
-    }
-    .mission {
-      flex: 1; /* additionally, equal width */
-      padding: 1em;
-      border: solid;
-      margin: 10px;
-      background-color: #beeab0;
-    }   
-    .vision {
-      flex: 1; /* additionally, equal width */
-      padding: 1em;
-      border: solid;
-      margin: 10px;
-      background-color:beige;
-    }   
-    .corevalues {
-      flex: 1; /* additionally, equal width */
-      padding: 1em;
-      border: solid;
-      margin: 10px;
-      background-color: #beeab0;
-    } 
-
     .row {
       display: flex; /* equal height of the children */
     }
-    .button1 {
+    .rowmission {
       flex: 1; /* additionally, equal width */
       padding: 1em;
       border: solid;
       margin: 10px;
-      background-color: beige;
-      text-align: center;
-
+      background-color: #beeab0;
     }   
-    .button2 {
+    .rowvision {
       flex: 1; /* additionally, equal width */
       padding: 1em;
       border: solid;
       margin: 10px;
       background-color:beige;
-      text-align: center;
-    }   
-    .button3 {
+    }  
+       
+    .rowsubcolumn2 {
       flex: 1; /* additionally, equal width */
       padding: 1em;
       border: solid;
       margin: 10px;
-      background-color: beige;
-      text-align: center;
-          } 
+      background-color:beige;
+    } 
+    .rowsubcolumn3 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color:beige;
+    }
+    .rowsubcolumn1 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color:beige;
+    }
+    
+    .container {
+      display: flex; /* equal height of the children */
+    }
+    .column1 {
+      columns: 2;
+      border: solid;
+      padding: 20px;
+    }
+    .column2 {
+      columns: 2;
+      border: solid;
+      padding: 20px;
+    }
+    .column3 {
+      columns: 2;
+      border: solid;
+      padding: 20px;
+    }
+ 
     </style>
 </head>
 <body>
@@ -92,5 +98,35 @@
     </div>
     <h1 style="font-size: large; color:#1e5e16: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Blogs</h1>
    
+    <!-- new code input -->
+ <div class="row">
+  <div class="rowmission">
+
+  </div>
+  <div class="rowvision">
+      <div class="rowsubcolumn1">
+        <div class="container"><img src="mission.jpg" alt="mission pic" width="90" height="100"><div class="column1">The views expressed in here are independent views </div></div>
+      </div>
+      <div class="rowsubcolumn2"> 
+        <div class="container"> I am Ojok Michael Ocan, son of the soil<div class="column2">The views expressed in here are independent views </div></div> </div>
+      <div class="rowsubcolumn3"> 
+        <div class="container">I am Ojok Michael Ocan, son of the soil <div class="column3"> The views expressed in here are independent views </div></div>
+      </div>
+    
+    <div>
+      
+    </div>
+  
+
+
+    </div>
+
+  </div>
+
+ </div>
+
+    </div>
+
+
 </body>
 </html>

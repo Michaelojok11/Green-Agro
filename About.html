@@ -69,12 +69,18 @@
       height: 70vh;
      
     }
+    
+
+    .column {
+      display: flex; /* equal height of the children */
+    }
+    .container {
+      columns: 2;
+      column-gap: normal;
+    }
     .rowsubcolumn1 {
-      flex: 1; /* additionally, equal width */
-      padding: 1em;
-      border: solid;
-      margin: 10px;
-      background-color:beige;
+      columns: 2;
+      column-gap: normal;
     } 
     .rowsubcolumn2 {
       flex: 1; /* additionally, equal width */
@@ -121,17 +127,17 @@
     </div>
     <div class="rowvision">
       <!-- row column 3 -->
-      <div class="rowcolumn1">
+      <div class="container">
         <!-- subcolumns with errors in the code -->
         <div class="rowsubcolumn1"> 
         </div>
         <p> The company  specialises in providing smart and sustainable agricultural solutions. Office is in Stockholm Sweden. Our company is built on trust, competence, trust and above all innovation. Our services ranges from; Trainings on the use of Agricultural machines, smart agriculture, sustainable farming,  Fertilizers</p>
       </div>
       <!-- row column 2 -->
-      <div class="rowcolumn2">
+      <div class="container"> <div class="rowcolumn2">
         <!-- Line of code that is working well -->
         <div class="rowsubcolumn2"></div>
-        <p> The company Green Agro is a company that was started founded in 2022. Our services ranges from; Trainings on the use of Agricultural machines, smart agriculture, sustainable , Trainings on the use of agricultural machineries</p>
+        <p> The company Green Agro is a company that was started founded in 2022. Our services ranges from; Trainings on the use of Agricultural machines, smart agriculture, sustainable , Trainings on the use of agricultural machineries</p> </div>   
 <!-- rowcolum3 -->
       </div>
       <div class="rowcolumn3">
