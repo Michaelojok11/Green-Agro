@@ -25,30 +25,26 @@
       text-align: right;
     }  
     .pagebanner {
-      background-image: url(Greenpic.jpg);
+      background-image: url(freeeagric.jpg);
       background-position: center center;
       top: 200px;
       height: 70vh;
     } 
 /* styling for the breadcrumbs */
-body {
-  margin: 100px 0;
-}
-.breadcrumbs ul svg {
-  width: 12px ;
-}
-
-/* breadcrumbs division */
-.breadcrumbs{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 20px;
-  text-align: center;
-  width: fit-content;
-}
-/* breadcrumbs ul */
-.breakcrumbs ul {
-  display: flex;
+.breadcrumbnav {
   list-style: none;
+  text-align: center;
+  background-image: url(smartagric.jpg) ;
+  height: 60vh
+}
+.breadcrumbnav li {
+  display: inline-block;
+}
+.breadcrumbnav li::after {
+  content: " >> ";
+}
+.breadcrumbnav li:last-child::after {
+  content: " ";
 }
 
     /*  */
@@ -121,27 +117,21 @@ body {
           <a href="blogs.html">BLOGS |</a> </div>
          </div>
 
-         <div class="breadcrumbs">
-          <ul>
-            <a href="home.html">Home</a>
-            <li>
-<li>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-    <path fill-rule="evenodd" d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z" clip-rule="evenodd" />
-  </svg>  
-</li>
-<li>
-  <a href="#">
-    About us
-  </a>
-</li>
-            </li>
-          </ul>
-         </div>
-         <div class="pagebanner">
-          <div class="wrapper">
-          </div>
+
+         <div id="container">
+          <ol class="breadcrumbnav"> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 style="font-size: x-large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> About</h1>
+            <li ><a href="home.html">Home</a></li>
+            <li>About us</li>
+          </ol>
+        </div>
     </div>
+
     <!-- new code input -->
  <div class="row">
   <div class="rowmission">
