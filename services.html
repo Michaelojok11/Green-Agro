@@ -23,6 +23,23 @@
       float: right;
       text-align: right;
     }   
+
+    /* breadcrumbscss */
+.breadcrumbnav {
+  list-style: none;
+}
+.breadcrumbnav li {
+  display: inline-block;
+}
+.breadcrumbnav li::after {
+  content: " >> ";
+}
+.breadcrumbnav li:last-child::after {
+  content: " ";
+}
+
+
+
       .row {
       display: flex; /* equal height of the children */
     }
@@ -89,6 +106,16 @@
           <a href="blogs.html">BLOGS |</a> </div>
 
          </div>
+
+        <div id="container">
+          <h1 style="text-align: center; font-size:xx-large;">About </h1>
+          <ol class="breadcrumbnav">
+            <li><a href="home.html">Home</a></li>
+            <li>About us</li>
+
+          </ol>
+
+        </div>
     </div>
     <h1 style=" text-align: center;color:#1e5e16; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> OUR SERVICES</h1>
     <p style="background-color: #d0f7c6; text-align: center;"> The company offers various services including:</p><p style="background-color: #d0f7c6; text-align: center;"> - Smart technology <br> <br> - Sustainable farming <br> <br> - Group Loans <br> <br> - Trainings on the use of Agricultural machines <br> <br> - Fertilizers <br> <br> - Search for markets for Agricultural goods </p> </p>
