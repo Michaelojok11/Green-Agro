@@ -24,22 +24,37 @@
       text-align: right;
     }   
 
-    /* breadcrumbscss */
-.breadcrumbnav {
-  list-style: none;
-  text-align: center;
-  background-image: url(image3.jpg) ;
-  height: 50vh
-}
-.breadcrumbnav li {
-  display: inline-block;
-}
-.breadcrumbnav li::after {
-  content: " >> ";
-}
-.breadcrumbnav li:last-child::after {
-  content: " ";
-}
+    /* styling for the breadcrumbscss */
+   body{
+    margin: 100px 0;
+   }
+   .breadcrumbs ul svg {
+    width: 20px;
+    vertical-align: middle;
+   }
+   .breadcrumbs{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    padding: 10px 48px;
+    box-shadow: 0 4px 30px -10px ;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+   }
+   .breadcrumbs ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 4px;
+   }
+   /* it is used to remove the underlining of the text */
+   .breadcrumbs ul li a {
+    text-decoration: none; 
+   }
+   .breadcrumbs ul li.arrow svg {
+    width: 18px;
+   }
 
 
 
@@ -109,22 +124,41 @@
           <a href="blogs.html">BLOGS |</a> </div>
 
          </div>
-
-        <div id="container">
-          <ol class="breadcrumbnav"> 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h1 style="font-size: x-large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> About</h1>
-            <li ><a href="home.html">Home</a></li>
-            <li>About us</li>
-
-          </ol>
+        <div class="breadcrumbs">
+          <ul>
+            <li>
+              <a href="home.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+              </svg>
+              </a>
+            </li>
+            <li class="arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z" clip-rule="evenodd" />
+              </svg>
+            </li>
+            <li>
+              <a href="#">Cateogory 1</a>
+              <a href="#">Cateogory 2</a>
+            </li>
+            <li class="arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z" clip-rule="evenodd" />
+              </svg> 
+            </li>
+            <li>
+              <a href="#"> About us</a>
+            </li>
+          
+          </ul>
+                  
 
         </div>
-    </div>
+
+
+
+
     <h1 style=" text-align: center;color:#1e5e16; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> OUR SERVICES</h1>
     <p style="background-color: #d0f7c6; text-align: center;"> The company offers various services including:</p><p style="background-color: #d0f7c6; text-align: center;"> - Smart technology <br> <br> - Sustainable farming <br> <br> - Group Loans <br> <br> - Trainings on the use of Agricultural machines <br> <br> - Fertilizers <br> <br> - Search for markets for Agricultural goods </p> </p>
 </body>
