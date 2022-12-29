@@ -6,12 +6,15 @@
 .row {
       display: flex; /* equal height of the children */
     }
+    /* logo css */
     .logo {
       flex: 1; /* additionally, equal width */
       padding: 1em;
       margin: 10px;
       float: left;
     }  
+
+    /* start of the navigation menu */
     .navigation {
       flex: 1; /* additionally, equal width */
       padding: 1em;
@@ -19,12 +22,40 @@
       float: right;
       text-align: center;
     }  
+
+    /* Navigation for the unordered list-CSS */
+    ul {
+      list-style-type:none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:#333333;
+    }
+
+    /* list item CSS */
+    li {
+      float: left;
+      
+    }
+    /* CSS for the a tag in the list item */
+    li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+/* End of navigation CSS */
+
+/* Social media icons CSS */
     .socialmedia {
       flex: 1;
       padding: 1em;
       margin: 10px;
       float: right;
     }  
+
+    /*rows and columns for Mission, Vision and Core values */
       .row {
       display: flex; /* equal height of the children */
     }
@@ -49,7 +80,9 @@
       margin: 10px;
       background-color: #beeab0;
     } 
+/* End of the rows and columns for Mission, Vision and Core values */
 
+    /* start of the button CSS */
     .row {
       display: flex; /* equal height of the children */
     }
@@ -60,7 +93,6 @@
       margin: 10px;
       background-color: beige;
       text-align: center;
-
     }   
     .button2 {
       flex: 1; /* additionally, equal width */
@@ -87,10 +119,13 @@
         <div class="logo; padding: top"> <img src="Logo1.jpg" alt="Green Agro Logo" width="250" height="90"></div>
 <!-- column 2 -->
         <div class="navigation"> 
-          <a href="home.html"> HOME |</a>
-          <a href="About.html">ABOUT US |</a>
-          <a href="services.html">SERVICES |</a>
-          <a href="blogs.html">BLOGS |</a> 
+          <ul> 
+            <li><a href="home.html" style="text-decoration: none;"> HOME |</a></li> 
+            <li><a href="About.html">ABOUT US |</a></li> 
+             <li><a href="services.html">SERVICES |</a></li>
+             <li><a href="blogs.html">BLOGS |</a></li> 
+          </ul>
+        
           </div>
         <div>
           <div class="socialmedia">
