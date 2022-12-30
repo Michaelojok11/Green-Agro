@@ -2,6 +2,15 @@
 <html>
 <head>
     <style>
+/* top bar CSS */
+.topbar {
+  background-color:rgb(208, 181, 181) ;
+  overflow: hidden;
+  padding: right;
+}
+li {
+  color: white;
+}
       h2 {text-align: center;}
 .row {
       display: flex; /* equal height of the children */
@@ -46,6 +55,10 @@
   padding: 12px;
   text-decoration: none;
 }
+li a:hover {
+  background-color: #111778;
+}
+
 /* End of navigation CSS */
 
 /* Social media icons CSS */
@@ -111,10 +124,25 @@
       background-color: beige;
       text-align: center;
           } 
+          /* End of button CSS */
+
     </style>
     <title> Website of Green Agro</title>
 </head>
 <body>
+  <!-- code for top bar -->
+  <div class="topbar;">
+      <ul class="topbar"> 
+        <li><a href="#" style="text-decoration: none;"><img src="telephone.png" alt="#" height="20" width="20"> (+46) 771296207 </a></li> 
+        <li><a href="#" style="text-decoration: none;"><img src="address.png" alt="#" width="20" height="20"> P.O.BOX 165, Malmo, Sweden </a></li> 
+         <li> <img src="" alt=""><a href="#" style="text-decoration: none;"> SERVICES </a></li>
+         </ul>
+         <ul>
+          
+         </ul>
+  </div>
+
+  <!-- logo -->
     <div class="row">
       <!-- colum 1 -->
         <div class="logo; padding: top"> <img src="Logo1.jpg" alt="Green Agro Logo" width="250" height="90"></div>
@@ -122,9 +150,9 @@
         <div class="navigation"> 
           <ul> 
             <li><a href="home.html" style="text-decoration: none;"> HOME </a></li> 
-            <li><a href="About.html">ABOUT US </a></li> 
-             <li><a href="services.html">SERVICES </a></li>
-             <li><a href="blogs.html">BLOGS </a></li> 
+            <li><a href="About.html" style="text-decoration: none;">ABOUT US </a></li> 
+             <li><a href="services.html" style="text-decoration: none;">SERVICES </a></li>
+             <li><a href="blogs.html" style="text-decoration: none;">BLOGS </a></li> 
           </ul>
         
           </div>
