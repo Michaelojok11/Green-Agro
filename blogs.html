@@ -1,137 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- STYLE -->
     <style>
-        .row {
+/* top bar CSS */
+.topbar {
+  background-color:rgb(104, 141, 114) ;
+  overflow: hidden;
+  padding: right;
+  text-align: center;
+}
+li {
+  color: white;
+}
+      h2 {text-align: center;}
+.row {
       display: flex; /* equal height of the children */
     }
+    /* logo css */
     .logo {
       flex: 1; /* additionally, equal width */
       padding: 1em;
       margin: 10px;
       float: left;
-    }   
-    /* Navigation CSS */
+    }  
+
+    /* start of the navigation menu */
     .navigation {
       flex: 1; /* additionally, equal width */
       padding: 1em;
       margin: 10px;
       float: right;
-      text-align: right;
+      text-align: center;
+      text-indent: 5em;
     }  
-    .pagebanner {
-      background-image: url(Greenpic.jpg);
-      background-position: center center;
-      top: 200px;
-      height: 70vh;
+
+    /* Navigation for the unordered list-CSS */
+    ul {
+      list-style-type:none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:rgb(104, 141, 114);
+      
+    }
+
+    /* list item CSS */
+    li {
+      float: left;
+      
+    }
+    /* CSS for the a tag in the list item */
+    li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111778;
+  color: white;
+}
+
+/* End of navigation CSS */
+
+/* Social media icons CSS */
+    .socialmedia {
+      flex: 1;
+      padding: 1em;
+      margin: 10px;
+      float: right;
+    }  
+
+    /*rows and columns for Mission, Vision and Core values */
+      .row {
+      display: flex; /* equal height of the children */
+    }
+    .service1 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: #beeab0;
+    }   
+    .service2 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color:beige;
+    }   
+    .service3 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: #beeab0;
     } 
+    .service4 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: #beeab0;
+    }   
+    .service5 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color:beige;
+    }   
+    .service6 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: #beeab0;
+    } 
+/* End of the rows and columns for Mission, Vision and Core values */
+
+    /* start of the button CSS */
     .row {
       display: flex; /* equal height of the children */
     }
-    .rowmission {
+    .button1 {
       flex: 1; /* additionally, equal width */
       padding: 1em;
       border: solid;
       margin: 10px;
-   
-    }   
-    .rowvision {
-      flex: 1; /* additionally, equal width */
-      padding: 1em;
-      border: solid;
-      margin: 10px;
-    }  
-
-    .rowsubcolumn2 {
-      flex: 1; /* additionally, equal width */
-      padding: 1em;
-      border: solid;
-      margin: 10px;
-    } 
-    /* subrow3 */
-    .rowsubcolumn3 {
-      flex: 1; /* additionally, equal width */
-      padding: 1em;
-      border: solid;
-      margin: 10px;
-    }
-    /* subrow1 */
-    .rowsubcolumn1 {
-      flex: 1; /* additionally, equal width */
-      padding: 1em;
-      border: solid;
-      margin: 10px;
-    }
-    
-    .container {
-      display: flex; /* equal height of the children */
+      background-color: beige;
       text-align: center;
-    }
-    .column1 {
-      columns: 2;
-      border: none;
-      padding: 10px;
-    }
-    .column2 {
-      columns: 2;
-      border: none;
-      padding: 10px;
-    }
-    .column3 {
-      columns: 2;
-      border: none;
-      padding: 10px;
-    }
- 
+    }   
+    .button2 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color:beige;
+      text-align: center;
+    }   
+    .button3 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: beige;
+      text-align: center;
+          } 
+          /* End of button CSS */
+
+
     </style>
+    <title> Services for Green Agro</title>
 </head>
 <body>
-    <!-- Linking pages -->
+  <!-- code for the top bar -->
+  <div class="topbar">
+    <ul class="topbar" style="text-decoration: none; padding-right: 100px;"> 
+      <li style="padding-right: 320px;">
+        <img src="telephone.png" alt="#" height="20" width="20"> (+46) 771296207 </a>
+      </li> 
+      <li style="padding-right: 320px;">
+        <img src="address.png" alt="#" width="20" height="20"> P.O.BOX 165, Malmo, Sweden </a>
+      </li> 
+       <li>
+        <img src="email.png" alt="#" width="20" height="20"> contact@greenagribusiness.com</a>
+      </li>
+       </ul>
+</div> 
+
+  <!-- logo and navigation bar-->
     <div class="row">
-        <div class="logo; padding: top"> <img src="Logo1.jpg" alt="Green Agro Logo" width="250" height="90"></div>
-        <div class="navigation">
-          <a href="home.html"> HOME |</a>
-          <a href="About.html">ABOUT US |</a>
-          <a href="services.html">SERVICES |</a>
-          <a href="blogs.html">BLOGS |</a> </div>
-         </div>
-         <div class="pagebanner">
-          <div class="wrapper">
+      <!-- colum 1 -->
+        <div class="logo;"> <img src="Logo1.jpg" alt="Green Agro Logo" width="250" height="90"></div>
+<!-- column 2 -->
+        <div class="navigation"> 
+          <ul> 
+            <!-- list item 1 -->
+            <li>
+              <a href="home.html" style="text-decoration: none;"> HOME </a>
+            </li> 
+            <!-- list item 2 -->
+            <li>
+              <a href="About.html" style="text-decoration: none;">ABOUT US </a></li> 
+              <!-- list item 3 -->
+             <li>
+              <a href="services.html" style="text-decoration: none;">SERVICES </a></li>
+              <!-- list item 4 -->
+             <li>
+              <a href="blogs.html" style="text-decoration: none;">BLOGS </a>
+            </li>
+            <!-- list item5 -->
+             <li>
+              <a href="#joinus" style="text-decoration: none;">JOIN US</a>
+            </li> 
+            
+          </ul>
+        
           </div>
+        <div>
+          <div class="socialmedia">
+            <img src="Facebook fit.jpg" alt="facebook" width="25" height="25">
+            <img src="linkedIn.png" alt="facebook" width="25" height="25">
+            <img src="Instagram.png" alt="facebook" width="25" height="25">
+            <img src="youtube.png" alt="facebook" width="25" height="25">
+            <img src="twitter.png" alt="facebook" width="25" height="25">
+          </div>
+
+        </div>
     </div>
-    
-    <h1 style="font-size: large; color:#1e5e16; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Blogs</h1>
-   
-    <!-- new code input -->
- <div class="row">
-  <div class="rowmission">
-    <h2 style="color: #1e5e16;">About Us</h2>
-    <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger;">Smart Agricultural Solutions</h1>
-<p style="font-size: large;"> Green Agri was founded in 2022 from Malmo, Sweden.It's headquarter is in Stockholm Sweden. It is well established company that specialises in providing smart and sustainable agricultural solutions. The company headoffice is located in Stockholm Sweden. Our company is built on trust, competence, and above all innovation. Our services ranges from; Trainings on the use of Agricultural machines, smart agriculture, sustainable farming, search for markets for agricultural products, fertilizers, Trainings on the use of agricultural machineri<br> We work close by agriculturists, makers, producers, retailers, governments, and different associations to satisfy our motivation to support the world in a protected, dependable and practical way. Together, we make efficiencies, create developments, and help networks flourish.<br> As qualities and practices around sustenance have changed, so have we. Today, we’re trend-setters remarkably situated to reshape feeding our reality.Today, we not just have the quickest developing arrangement of protein-driven brands, we offer more prominent straight forwardness into all that we do. We conjointly promote property farming practices that square measure economically viable, environmentally friendly, strengthen our communities and shield the health of gift and future generations.
-  <br> With our experience in developing growth methods, operational and integration of stakeholders in price chains. We created custom-made solutions to bridge the gap between real challenges across the provision chain.</p>
+
+<p style="text-align: center"> <img src="image3.jpg" alt="agricultural photo" width="100%" height="250"></p>
+<h1 style= "color:darkolivegreen;text-align:center;border:2px dodgerblue;"> SERVICES </h1>
+<p style="text-align: center;font-size:large ;"> Green Agribusiness offers various services across the globe ranging from smart agricultural solutions to selling of fertilizers and other agricultural solutions </p>
+
+    <div class="row">
+      <!-- mission row start-->
+      <div class="service1">
+        <div style="position:relative; top: -40px;">
+          <h2 style="padding-top:5px;"> Service 1<hr></h2>
+        </div>
+        <div style="position: relative; top: -40px;text-align: center">
+          To be the Number one solution for smart and sustainable agriculture in Europe and Africa button </div>
+        </div>
+        <!-- mission row end -->
+
+       <!-- vision row start -->
+      <div class="service2">
+        <div style="position: relative; top: -40px ;">
+          <h2 style="padding-top: 5px;">Service 2<hr></h2>
+          </div>
+          <div style="position: relative; top: -40px; text-align: center;">
+            To improve rural livelihoods and create value by providing sustainable food systems in Europe and Africa 
+            <br> Working to offer solutions at the intersection of farming and climate </div></div>
+          <!-- vision row end -->
+
+      <!-- core values row -->
+      <div class="service3">
+        <div style="position: relative; top: -40px;">
+          <h2 style="padding-top: 5px;">Service 3<hr></h2></div><div style="position: relative; top: -40px;text-align: center"> Integrity 
+            <br> Commitment <br> Professional, effective and informed by Science</div></div>
+      <hr>
+    </div>
+    <!-- button -->
+<div>
+    <div class="row">
+        <div class="button1"><button type="button" onclick="alert('Responsibility')">READMORE</button></div>
+        <div class="button2"><button type="button" onclick="alert('Integrity')">READMORE</button></div>
+        <div class="button3"><button type="button" onclick="alert('Leading in agricultural innovation')">READMORE</button></div>
 </div>
-<!-- CREATE 2 ROWS I.E ROWVISION AND ROWMISSION -->
-<!-- Rowvision, create rows and then add tow columns -->
-  <div class="rowvision">
-      <div class="rowsubcolumn1">
-        <div class="container"><img src="mission.jpg" alt="mission pic" width="100" height="100"><div class="column1"><h3 style="text-align:left; font-size: large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Our Mission</h3><p style="text-align:left">To be the Number one solution for smart and sustainable agriculture in Europe and Africa</p></div></div>
-      </div>
-      <!-- Divide the 3 sub col  -->
-      <div class="rowsubcolumn2"> 
-        <div class="container"> <img src="mission.jpg" alt="pic" width="100" height="100"><div class="column2"><h3 style="text-align:left; font-size: large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Our vision </h3><p style="padding-block: top; text-align: left;">To improve rural livelihoods and create value by providing sustainable food systems in Europe and Africa
-         <br> Working to offer solutions at the intersection of farming and climate</p></div></div> </div>
-      <div class="rowsubcolumn3"> 
-        <div class="container"> <img src="mission.jpg" alt="mission pic" width="100" height="100"><div class="column3"><h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;font-size: large; text-align: left;">Core Values</h3> <p style="text-align: left;">Integrity <br>
-       Professional, effective and informed by Science </p> </div></div></div>
-  </div>
- </div>
+
+<!-- division of the services -->
+<div class="row">
+  <!-- mission row start-->
+  <div class="service4">
+    <div style="position:relative; top: -40px;">
+      <h2 style="padding-top:5px;"> Service 4<hr></h2>
     </div>
+    <div style="position: relative; top: -40px;text-align: center">
+      To be the Number one solution for smart and sustainable agriculture in Europe and Africa button </div>
+    </div>
+    <!-- mission row end -->
 
+   <!-- vision row start -->
+  <div class="service5">
+    <div style="position: relative; top: -40px ;">
+      <h2 style="padding-top: 5px;">Service 5<hr></h2>
+      </div>
+      <div style="position: relative; top: -40px; text-align: center;">
+        To improve rural livelihoods and create value by providing sustainable food systems in Europe and Africa 
+        <br> Working to offer solutions at the intersection of farming and climate </div></div>
+      <!-- vision row end -->
 
+  <!-- core values row -->
+  <div class="service6">
+    <div style="position: relative; top: -40px;">
+      <h2 style="padding-top: 5px;">Service 6<hr></h2></div><div style="position: relative; top: -40px;text-align: center"> Integrity 
+        <br> Commitment <br> Professional, effective and informed by Science</div></div>
+  <hr>
+</div>
+<!-- button -->
+<div>
+<div class="row">
+    <div class="button1"><button type="button" onclick="alert('Responsibility')">READMORE</button></div>
+    <div class="button2"><button type="button" onclick="alert('Integrity')">READMORE</button></div>
+    <div class="button3"><button type="button" onclick="alert('Leading in agricultural innovation')">READMORE</button></div>
+</div>
 </body>
+
 </html>
