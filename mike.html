@@ -12,6 +12,7 @@ float: left;
   width: 33.3%;
   padding: 0px;
  text-align: center;
+ color: white;
 }
 
 .topbar::after {
@@ -81,10 +82,93 @@ li a:hover {
       margin: 10px;
       float: right;
     }  
+.crumbs{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.crumbs ul {
+    list-style: none;
+    display: inline-block;
+}
+.crumbs u li a {
+    display: inline ;
+    float: left;
+    background: #111778;
+    text-align: center;
+    position: relative;
+    padding: 20px;
 
-   
-   
 
+}
+
+    /*rows and columns for Mission, Vision and Core values */
+      .row {
+      display: flex; /* equal height of the children */
+    }
+    .service1 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+     
+    }   
+    .service2 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+     
+    .imagerow {
+      flex: 1;
+      padding:1em;
+      border: none;
+      margin: 100px;
+    }
+    }   
+    .service3 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+         } 
+   
+/* End of the rows and columns for Mission, Vision and Core values */
+
+    /* start of the button CSS */
+    .row {
+      display: flex; /* equal height of the children */
+    }
+    .button1 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: beige;
+      text-align: center;
+    }   
+    .button2 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color:beige;
+      text-align: center;
+    }   
+    .button3 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: beige;
+      text-align: center;
+          } 
+          /* End of button CSS */
+
+
+        /* code for the all columns for the socials */
 *{
   box-sizing: border-box;
 }
@@ -103,9 +187,22 @@ li a:hover {
   clear: both;
 }
 
+*{
+  box-sizing: border-box;
+}
+.imagerow1{
+  float: left;
+  width: 25%;
+  padding: 12px;
+  min-height: 30px;
+  text-align: center;
+}
 
-
-
+.imagerow::after {
+  content: "";
+  display: table;
+  clear: both;
+}
     </style>
     <title> Services for Green Agro</title>
 </head>
@@ -113,13 +210,15 @@ li a:hover {
   <!-- code for the top bar -->
   <div class="topbar">
     <div class="topbar1">
-        <p>E-mail:michaelojok9@gmail.com</p>
+      <img src="telephone.png" alt="#" height="20" width="20"> (+46) 771296207 </a>
     </div>
     <div class="topbar1">
-        <p>E-mail:michaelojok9@gmail.com</p>
+      <img src="address.png" alt="#" width="20" height="20"> P.O.BOX 165, Malmo, Sweden </a>
     </div>
-    
-</div> 
+    <div class="topbar1">
+      <img src="email.png" alt="#" width="20" height="20"> contact@greenagribusiness.com</a>
+    </div>
+    </div>  
 
   <!-- logo and navigation bar-->
     <div class="row">
@@ -160,15 +259,186 @@ li a:hover {
         </div>
     </div>
 
+    <!-- breadcrumbs -->
+    <div class="crumbs">
+        <ul>
+            <h1 style="padding-top: 120px;font-size: x-large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> About</h1>
+            <li ><a href="home.html"> <i class="home" aria-hidden="true"></i> Home </a></li>
+            <li><a href="#"><i class="about" aria-hidden="true"></i>About us</a> </li>
+        </ul>
+
+    </div>
+
+
 <p style="text-align: center"> <img src="food.jpg" alt="agricultural photo" width="100%" height="350"></p>
 <h1 style= "color:darkolivegreen;text-align:center;border:2px dodgerblue;"> OUR NEWS ARTICLES </h1>
 <p style="text-align: center;font-size:large ;"> We have a support team , that is realiable to handle your queries. </p>
 
+<!-- First row-->
+    <div class="row">
+      <!-- Start of code for the first column for service 1  -->
+      <div class="service1">
+        <div class="imagerow" >
+        <img src="food.jpg" alt="#" height="150" width="380">
+        <div class="imagerow1">
+          <h1 style="font-size: 16px;color: rgb(77, 77, 225); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Author:</h1>
+        </div>
+        <!-- code for image column -->
+        <div class="imagerow1">
+         <h1 style="font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Michael</h1>
+        </div>
+        <!-- division for the author details just after the imagerow -->
+        <div class="imagerow1">
+          <h1 style="font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: rgb(188, 241, 127);">post-date:</h1>
+        </div>
+        <div class="imagerow1">
+          <p style="font-size: 12.5px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">06-01-2023</p>
+        </div>
+        </div>
+      <!--Division for the heading and the paragraph  -->
+        <div>
+          <h2 style="font-size: larger; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> How to start a career in agriculture in Africa today</h2>
+          <p style="text-align: center;">Decide what type of farming you want to get into. There are many different types of farming to consider. Understand the repsonsibilities and demands. Plant the seed to grow your career. Gain real experience. </p>
+        </div>
+        <!-- code for socials column -->
+        <div class="socials">
+          <!-- facebook column -->
+          <div class="all_columns">
+            <img src="Facebook fit.jpg" alt="facebook" width="35" height="35">
+          </div>
+          <!-- LinkedIn column -->
+          <div class="all_columns">
+            <img src="linkedIn.png" alt="facebook" width="35" height="35">
+          </div>
+          <!-- Instargram Column -->
+          <div class="all_columns">
+            <img src="Instagram.png" alt="facebook" width="35" height="35">
+          </div>
+          <!-- Youtube column -->
+          <div class="all_columns">
+            <img src="youtube.png" alt="facebook" width="35" height="35">
+          </div>
+                </div>
+                <div class="button1">
+                  <button type="button" onclick="alert('Responsibility')">READMORE</button>
+                </div>
+            </div>
+              <!-- End of the social columns -->
+<!-- End of the code for the column for Service 1 -->
 
 
 
+<!-- Start of code for column for service 2  -->  
+  
+        <div class="service2">
+          <div class="imagerow" >
+          <img src="food.jpg" alt="#" height="150" width="380">
+          <div class="imagerow1">
+            <h1 style="font-size: 16px;color: rgb(77, 77, 225); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Author:</h1>
+          </div>
+          <!-- code for image column -->
+          <div class="imagerow1">
+           <h1 style="font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Michael</h1>
+          </div>
+          <!-- division for the author details just after the imagerow -->
+          <div class="imagerow1">
+            <h1 style="font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: rgb(188, 241, 127);">post-date:</h1>
+          </div>
+          <div class="imagerow1">
+            <p style="font-size: 12.5px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">06-01-2023</p>
+          </div>
+          </div>
+        <!--Division for the heading and the paragraph  -->
+          <div>
+            <h2 style="font-size: larger; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> How to start a career in agriculture in Africa today</h2>
+            <p style="text-align: center;">Decide what type of farming you want to get into. There are many different types of farming to consider. Understand the repsonsibilities and demands. Plant the seed to grow your career. Gain real experience. </p>
+          </div>
+          <!-- code for socials column -->
+          <div class="socials">
+            <!-- facebook column -->
+            <div class="all_columns">
+              <img src="Facebook fit.jpg" alt="facebook" width="35" height="35">
+            </div>
+            <!-- LinkedIn column -->
+            <div class="all_columns">
+              <img src="linkedIn.png" alt="facebook" width="35" height="35">
+            </div>
+            <!-- Instargram Column -->
+            <div class="all_columns">
+              <img src="Instagram.png" alt="facebook" width="35" height="35">
+            </div>
+            <!-- Youtube column -->
+            <div class="all_columns">
+              <img src="youtube.png" alt="facebook" width="35" height="35">
+            </div>
+                  </div>
+                  <div class="button1">
+                    <button type="button" onclick="alert('Responsibility')">READMORE</button>
+                  </div>
+              </div>
 
 
+    <!-- start of the code for column for service 3 (major columns) -->
+      <div class="service3">
+       <div>
+        <h1 style="font-size: large; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> How to start a career in Agriculture today</h1>
+       </div>
+       <div class="imagerow1">
+        <h1 style="font-size: 16px;color: rgb(77, 77, 225); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Author:</h1>
+      </div>
+      <!-- code for image column -->
+      <div class="imagerow">
+        <div class="imagerow1">
+          <h1 style="font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Michael</h1>
+         </div>
+         <!-- division for the author details just after the imagerow -->
+         <div class="imagerow1">
+           <h1 style="font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: rgb(188, 241, 127);">post-date:</h1>
+         </div>
+         <div class="imagerow1">
+           <p style="font-size: 12.5px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">06-01-2023</p>
+         </div> 
+      </div>
+      <!-- code for the paragraphs after the  -->
+      <div>
+        <p style="text-align: center;"> 
+          Smart and sustainable agriculture is the future that we are all looking forward to. A World were all that matters is eradicating poverty and sustainable development</p>
+      </div>      
+      <!-- code for the button on column for service 3 -->
+          <div class="button3"><button type="button" onclick="alert()">READMORE</button></div>
+      
+          <!--  -->
+          <div>
+            <h1 style="font-size: large; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> How to start a career in Agriculture today</h1>
+           </div>
+           <div class="imagerow1">
+            <h1 style="font-size: 16px;color: rgb(77, 77, 225); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Author:</h1>
+          </div>
+          <!-- code for image column -->
+          <div class="imagerow">
+            <div class="imagerow1">
+              <h1 style="font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Michael</h1>
+             </div>
+             <!-- division for the author details just after the imagerow -->
+             <div class="imagerow1">
+               <h1 style="font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: rgb(188, 241, 127);">post-date:</h1>
+             </div>
+             <div class="imagerow1">
+               <p style="font-size: 12.5px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">06-01-2023</p>
+             </div> 
+          </div>
+          <!-- code for the paragraphs after the  -->
+          <div>
+            <p style="text-align: center;"> 
+              Smart and sustainable agriculture is the future that we are all looking forward to. A World were all that matters is eradicating poverty and sustainable development</p>
+          </div>      
+          <!-- code for the button on column for service 3 -->
+              <div class="button3">
+                <button type="button" onclick="alert()">READMORE</button>
+              </div>
+
+              
+        </div>
 </div>
 
 </body>

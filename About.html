@@ -7,23 +7,97 @@
     <title>Document</title>
     <!-- STYLE -->
     <style>
-        .row {
+
+      /* topbar */
+.topbar {
+  background-color:rgb(104, 141, 114) ;
+
+}
+.topbar1{
+float: left;
+  width: 33.3%;
+  padding: 0px;
+ text-align: center;
+ color: white;
+}
+
+.topbar::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* End of top bar */
+
+
+/* Start of the navigation  */
+/* start of the navigation menu */
+li {
+  color: white;
+}
+      h2 {text-align: center;}
+.row {
       display: flex; /* equal height of the children */
     }
+    /* logo css */
     .logo {
       flex: 1; /* additionally, equal width */
       padding: 1em;
       margin: 10px;
       float: left;
-    }   
-    /* Navigation CSS */
+    }  
+
+    /* start of the navigation menu */
     .navigation {
       flex: 1; /* additionally, equal width */
       padding: 1em;
       margin: 10px;
       float: right;
       text-align: center;
+      text-indent: 5em;
     }  
+
+    /* Navigation for the unordered list-CSS */
+    ul {
+      list-style-type:none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:rgb(104, 141, 114);
+      
+    }
+
+    /* list item CSS */
+    li {
+      float: left;
+      
+    }
+    /* CSS for the a tag in the list item */
+    li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111778;
+  color: white;
+}
+
+/* End of navigation CSS */
+
+/* Social media icons CSS */
+    .socialmedia {
+      flex: 1;
+      padding: 1em;
+      margin: 10px;
+      float: right;
+    }  
+
+/* End of the navigation CSS */
+
+         
+     
     
 /* styling for the breadcrumbs */
 .breadcrumbnav {
@@ -34,6 +108,7 @@
 }
 .breadcrumbnav li {
   display: inline-block;
+  float: none;
 }
 .breadcrumbnav li::after {
   content: " >> ";
@@ -102,22 +177,67 @@
     </style>
 </head>
 <body>
-    <!-- Linking pages -->
+
+  <!-- Start of top bar -->
+  <div class="topbar">
+    <div class="topbar1">
+      <img src="telephone.png" alt="#" height="20" width="20"> (+46) 771296207 </a>
+    </div>
+    <div class="topbar1">
+      <img src="address.png" alt="#" width="20" height="20"> P.O.BOX 165, Malmo, Sweden </a>
+    </div>
+    <div class="topbar1">
+      <img src="email.png" alt="#" width="20" height="20"> contact@greenagribusiness.com</a>
+    </div>
+    </div> 
+    <!-- End of top bar -->
+
+   
+    <!-- logo and navigation bar-->
     <div class="row">
-        <div class="logo; padding: top"> <img src="Logo1.jpg" alt="Green Agro Logo" width="250" height="90"></div>
-        <div class="navigation">
-          <a href="home.html" style="text-decoration: none;"> HOME |</a>
-          <a href="About.html" style="text-decoration: none;" >ABOUT US |</a>
-          <a href="services.html" style="text-decoration: none;">SERVICES |</a>
-          <a href="blogs.html" style="text-decoration: none;">BLOGS |</a> </div>
-         </div>
+      <!-- colum 1 -->
+        <div class="logo;"> <img src="Logo1.jpg" alt="Green Agro Logo" width="250" height="90"></div>
+        <!-- column 2 -->
+        <div class="navigation"> 
+          <ul> 
+            <!-- list item 1 -->
+            <li>
+              <a href="home.html" style="text-decoration: none;"> HOME </a>
+            </li> 
+            <!-- list item 2 -->
+            <li>
+              <a href="About.html" style="text-decoration: none;">ABOUT US </a></li> 
+              <!-- list item 3 -->
+             <li>
+              <a href="services.html" style="text-decoration: none;">SERVICES </a></li>
+              <!-- list item 4 -->
+             <li>
+              <a href="blogs.html" style="text-decoration: none;">BLOGS </a>
+            </li>
+            <!-- list item5 -->
+             <li>
+              <a href="#joinus" style="text-decoration: none;">JOIN US</a>
+            </li>   
+          </ul>
+          </div>
+          <!-- socialmedia  -->
+        <div>
+          <div class="socialmedia">
+            <img src="Facebook fit.jpg" alt="facebook" width="25" height="25">
+            <img src="linkedIn.png" alt="facebook" width="25" height="25">
+            <img src="Instagram.png" alt="facebook" width="25" height="25">
+            <img src="youtube.png" alt="facebook" width="25" height="25">
+            <img src="twitter.png" alt="facebook" width="25" height="25">
+          </div>
+
+        </div>
+    </div>
 
          <div id="container">
-          <ol class="breadcrumbnav"> 
-           
+          <ol class="breadcrumbnav">            
             <h1 style="padding-top: 120px;font-size: x-large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> About</h1>
             <li ><a href="home.html"> Home </a></li>
-            <li>About us</li>
+            <li><a href="#">About us</a></li>
           </ol>
         </div>
     </div>
