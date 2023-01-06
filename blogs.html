@@ -154,6 +154,24 @@ li a:hover {
   display: table;
   clear: both;
 }
+
+*{
+  box-sizing: border-box;
+}
+.imagerow1{
+  float: left;
+  width: 25%;
+  padding: 12px;
+  min-height: 30px;
+  border: 1px solid;
+  text-align: center;
+}
+
+.imagerow::after {
+  content: "";
+  display: table;
+  clear: both;
+}
     </style>
     <title> Services for Green Agro</title>
 </head>
@@ -216,15 +234,29 @@ li a:hover {
 <h1 style= "color:darkolivegreen;text-align:center;border:2px dodgerblue;"> OUR NEWS ARTICLES </h1>
 <p style="text-align: center;font-size:large ;"> We have a support team , that is realiable to handle your queries. </p>
 
+<!-- First row-->
     <div class="row">
-      <!-- mission row start-->
+      <!-- Start of code for the first column for service 1  -->
       <div class="service1">
         <div class="imagerow" >
         <img src="food.jpg" alt="#" height="150" width="380">
-                </div>
+        <div class="imagerow1">
+          <h1 style="font-size: 16px;color: rgb(77, 77, 225); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Author:</h1>
+        </div>
+        <!-- code for image column -->
+        <div class="imagerow1">
+         <h1 style="font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Michael</h1>
+        </div>
+        <!-- division for the author details just after the imagerow -->
+        <div class="imagerow1">
+          <h1 style="font-size: 16px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: rgb(188, 241, 127);">post-date:</h1>
+        </div>
+        <div class="imagerow1">
+          <p style="font-size: 12.5px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">06-01-2023</p>
+        </div>
+        </div>
+      
 <!-- columns for date and author -->
-
-
         <div>
           <h2 style="font-size: larger; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> How to start a career in agriculture in Africa today</h2>
           <p style="text-align: center;">Decide what type of farming you want to get into. There are many different types of farming to consider. Understand the repsonsibilities and demands. Plant the seed to grow your career. Gain real experience. </p>
@@ -253,11 +285,11 @@ li a:hover {
    
 
        <!-- vision row start -->
-       <div class="service1">
+       <div class="service2">
         <div class="imagerow" >
         <img src="food.jpg" alt="#" height="150" width="380">
                 </div>
-<!-- columns for date and author -->
+
         <div>
           <h2 style="font-size: larger; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> How to start a career in agriculture in Africa today</h2>
           <p style="text-align: center;">Decide what type of farming you want to get into. There are many different types of farming to consider. Understand the repsonsibilities and demands. Plant the seed to grow your career. Gain real experience. </p>
