@@ -5,9 +5,20 @@
 /* top bar CSS */
 .topbar {
   background-color:rgb(104, 141, 114) ;
-  overflow: hidden;
-  padding: right;
-  text-align: center;
+
+}
+.topbar1{
+float: left;
+  width: 33.3%;
+  padding: 0px;
+ text-align: center;
+ color: white;
+}
+
+.topbar::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 li {
   color: white;
@@ -177,18 +188,16 @@ li a:hover {
 <body>
   <!-- code for the top bar -->
   <div class="topbar">
-    <ul class="topbar" style="text-decoration: none; padding-right: 100px;"> 
-      <li style="padding-right: 320px;">
-        <img src="telephone.png" alt="#" height="20" width="20"> (+46) 771296207 </a>
-      </li> 
-      <li style="padding-right: 320px;">
-        <img src="address.png" alt="#" width="20" height="20"> P.O.BOX 165, Malmo, Sweden </a>
-      </li> 
-       <li>
-        <img src="email.png" alt="#" width="20" height="20"> contact@greenagribusiness.com</a>
-      </li>
-       </ul>
-</div> 
+    <div class="topbar1">
+      <img src="telephone.png" alt="#" height="20" width="20"> (+46) 771296207 </a>
+    </div>
+    <div class="topbar1">
+      <img src="address.png" alt="#" width="20" height="20"> P.O.BOX 165, Malmo, Sweden </a>
+    </div>
+    <div class="topbar1">
+      <img src="email.png" alt="#" width="20" height="20"> contact@greenagribusiness.com</a>
+    </div>
+    </div>  
 
   <!-- logo and navigation bar-->
     <div class="row">
@@ -337,8 +346,7 @@ li a:hover {
               </div>
 
 
-
-    <!-- start of the code for column for service 3 -->
+    <!-- start of the code for column for service 3 (major columns) -->
       <div class="service3">
        <div>
         <h1 style="font-size: large; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> How to start a career in Agriculture today</h1>
@@ -397,9 +405,9 @@ li a:hover {
                 <button type="button" onclick="alert()">READMORE</button>
               </div>
 
+              
         </div>
 </div>
-
 
 </body>
 
