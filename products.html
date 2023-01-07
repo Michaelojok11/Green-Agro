@@ -87,10 +87,15 @@ li a:hover {
 
         /* code for the all columns for the socials */
 table,th,td {
-    border: 1px solid black;
-    border-style: dotted;
+    border:1px solid black;
+    border-collapse: collapse;
 }
-
+th:nth-child(even), td:nth-child(even){
+    background-color: #484951;
+}
+tr:nth-child(even){
+    background-color:#484951 ;
+}
     </style>
     <title> Services for Green Agro</title>
 </head>
@@ -174,6 +179,11 @@ table,th,td {
         <td>Joe</td>
         <td>Swanson</td>
         <td>$300</td>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
     </tr>
     
 
