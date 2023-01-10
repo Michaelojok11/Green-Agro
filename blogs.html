@@ -80,6 +80,25 @@ li a:hover {
       float: right;
     }  
 
+      /* styling for the breadcrumbs */
+.breadcrumbnav {
+  list-style: none;
+  text-align: center;
+  background-image: url(smart.jpg);
+  height: 50vh
+}
+.breadcrumbnav li {
+  display: inline-block;
+  float: none;
+}
+.breadcrumbnav li::after {
+  content: " >> ";
+}
+.breadcrumbnav li:last-child::after {
+  content: " ";
+}
+/* End of breadcrumb*/
+
     /*rows and columns for Mission, Vision and Core values */
       .row {
       display: flex; /* equal height of the children */
@@ -314,7 +333,7 @@ li a:hover {
 <!-- breadcrumbs -->
 <div id="container">
   <ol class="breadcrumbnav">            
-    <h1 style="padding-top: 120px;font-size: x-large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Services</h1>
+    <h1 style="padding-top: 120px;font-size: x-large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Blogs </h1>
     <li ><a href="#"> Home >> Blogs </a></li>           
   </ol>
 </div>
