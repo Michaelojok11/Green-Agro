@@ -1,26 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
-        /*CSS */
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
+/* top bar CSS */
+.topbar {
+  background-color:rgb(104, 141, 114) ;
+
+}
+.topbar1{
+float: left;
+  width: 33.3%;
+  padding: 0px;
+ text-align: center;
+ color: white;
+}
+
+.topbar::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* start of the navigation menu */
+li {
+  color: white;
+}
+      h2 {text-align: center;}
+.row {
+      display: flex; /* equal height of the children */
+    }
+    /* logo css */
+    .logo {
+       /* additionally, equal width */
+      padding: 1em;
+      margin: 1px;
+      float: left;
+    }  
+
+    /* start of the navigation menu */
+    .navigation {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      margin: 10px;
+      float: right;
+      text-align: center;
+      text-indent: 3em;
+    }  
+
+    /* Navigation for the unordered list-CSS */
+    ul {
+      list-style-type:none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;           
+    }
+
+    /* list item CSS */
+    li {
+      float: left;
+      
+    }
+    /* CSS for the a tag in the list item */
+    li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: rgb(104, 141, 114);
+  color: white;
+}
+
+/* End of navigation CSS */
+
+/* Social media icons CSS */
+    .socialmedia {
+      flex: 1;
+      padding: 1em;
+      margin: 10px;
+      float: right;
+    }  
+
+    /*rows and columns for Mission, Vision and Core values */
+      .row {
+      display: flex; /*  */
+    }
+    .mission {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: #beeab0;
+    }   
+    .vision {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color:beige;
+    }   
+    .corevalues {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: #beeab0;
+    } 
+/* End of the rows and columns for Mission, Vision and Core values */
+
+    /* start of the button CSS */
+    .row {
+      display: flex; /* equal height of the children */
+    }
+    .button1 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: beige;
+      text-align: center;
+    }   
+    .button2 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color:beige;
+      text-align: center;
+    }   
+    .button3 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: beige;
+      text-align: center;
+          } 
+          /* End of button CSS */
+
+ /* Call to Action CSS */
+          .rowaction {
+  text-align: center;
+  background-image: url(smartagric.jpg) ;
+  height: 30vh
+          }
+
+/* footer */
+
         .footer-container {
-            background-color: rgb(100, 152, 100);
+            background-color: rgb(104, 141, 114);
             padding-bottom: 3rem;
             padding-top: 1rem;
         }
         .footer {
             width: 100%;
-            height:32vh;
-            background-color:rgb(100, 152, 100);
+            height:31vh;
+            background-color:rgb(104, 141, 114);
             color: white;
             display: flex;
             justify-content: center;
@@ -61,13 +198,13 @@
             margin-bottom: 1rem;
         }
         #footer-email::placeholder {
-            color: rgb(81, 165, 138);
+            color: rgb(104, 141, 114);
         }
         #footer-email-btn {
             width: 100px;
             height: 40px;
             border-radius: 4px;
-            background-color: rgb(103, 158, 104);
+            background-color: rgb(104, 141, 114);
             border: none;
             color: white;
             font-size: 1rem;
@@ -77,13 +214,198 @@
             background-color: skyblue;
             transition: all 0.4s ease-out;
         }
+        /* End of footer */
+        
     </style>
-   
+    <title> Website of Green Agro</title>
 </head>
 <body>
-    <form action=""><label for="">
+  <!-- code for top bar -->
+  <div class="topbar">
+    <div class="topbar1">
+      <img src="telephone.png" alt="#" height="20" width="20"> (+46) 771296207 </a>
+    </div>
+    <div class="topbar1">
+      <img src="address.png" alt="#" width="20" height="20"> P.O.BOX 165, Malmo, Sweden </a>
+    </div>
+    <div class="topbar1">
+      <img src="email.png" alt="#" width="20" height="20"> contact@greenagribusiness.com</a>
+    </div>
+    </div> 
+
+  <!-- logo and navigation bar-->
+    <div class="row">
+      <!-- colum 1 -->
+        <div class="logo"> <img src="Logo1.jpg" alt="Green Agro Logo" width="150" height="60"></div>
+<!-- column 2 -->
+        <div class="navigation"> 
+          <ul> 
+            <!-- list item 1 -->
+            <li>
+              <a href="home.html" style="text-decoration: none;"> HOME </a>
+            </li> 
+            <!-- list item 2 -->
+            <li>
+              <a href="About.html" style="text-decoration: none;">ABOUT US </a></li> 
+              <!-- list item 3 -->
+             <li>
+              <a href="services.html" style="text-decoration: none;">SERVICES </a></li>
+              <!-- list item 4 -->
+             <li>
+              <a href="blogs.html" style="text-decoration: none;">BLOGS </a>
+            </li>
+            <!-- list item5 -->
+             <li>
+              <a href="contactus.html" style="text-decoration: none;">CONTACT US</a>
+            </li> 
+            <li>
+              <a href="products.html" style="text-decoration: none;">PRODUCTS</a>
+            </li> 
+            
+          </ul>
         
-    </label></form>
-    
+          </div>
+        <div>
+          <div class="socialmedia">
+            <img src="Facebook fit.jpg" alt="facebook" width="25" height="25">
+            <img src="linkedIn.png" alt="facebook" width="25" height="25">
+            <img src="Instagram.png" alt="facebook" width="25" height="25">
+            <img src="youtube.png" alt="facebook" width="25" height="25">
+            <img src="twitter.png" alt="facebook" width="25" height="25">
+          </div>
+
+        </div>
+    </div>
+
+<p style="text-align: center"> <img src="image3.jpg" alt="agricultural photo" width="100%" height="450"></p>
+<h1 style= "color:darkolivegreen;text-align:center;border:2px dodgerblue;"> GREEN AGRIBUSINESS </h1>
+<p style="text-align: center;font-size:large ;"> Green Agribusiness is a company that deals in agriculture by using smart technology. The company works towards finding solutions to maximize the economic, environmental and social sustainability of agriculture and agroindustry </p>
+<div class="row">
+    <div class="column">
+        <p style="text-align: center;"><img src="planting.png" alt= "planting trees" width="18%;"></p>
+    </div>
+    <div class="column">
+        <p style="text-align:center"><img src="planting.png" alt="planting trees" width="18%;"></p>
+        </div>
+        <div class="column">
+            <p style="text-align: center;"><img src="planting.png" alt="planting trees" width="18%"></p>
+        </div>
+</div>
+
+    <div class="row">
+      <!-- mission row start-->
+      <div class="mission">
+        <div style="position:relative; top: -40px;">
+          <h2 style="padding-top:5px;"> OUR MISSION<hr></h2>
+        </div>
+        <div style="position: relative; top: -40px;text-align: center">
+          To be the Number one solution for smart and sustainable agriculture in Europe and Africa button </div>
+        </div>
+        <!-- mission row end -->
+
+       <!-- vision row start -->
+      <div class="vision">
+        <div style="position: relative; top: -40px ;">
+          <h2 style="padding-top: 5px;">OUR VISION<hr></h2>
+          </div>
+          <div style="position: relative; top: -40px; text-align: center;">
+            To improve rural livelihoods and create value by providing sustainable food systems in Europe and Africa 
+            <br> Working to offer solutions at the intersection of farming and climate </div></div>
+          <!-- vision row end -->
+
+      <!-- core values row -->
+      <div class="corevalues">
+        <div style="position: relative; top: -40px;">
+          <h2 style="padding-top: 5px;">CORE VALUES<hr></h2></div><div style="position: relative; top: -40px;text-align: center"> Integrity 
+            <br> Commitment <br> Professional, effective and informed by Science</div></div>
+      <hr>
+    </div>
+    <!-- button -->
+<div>
+    <div class="row">
+        <div class="button1"><button type="button" onclick="alert('Responsibility')">READMORE</button></div>
+        <div class="button2"><button type="button" onclick="alert('Integrity')">READMORE</button></div>
+        <div class="button3"><button type="button" onclick="alert('Leading in agricultural innovation')">READMORE</button></div>
+</div>
+<br>
+<br>
+
+<!-- Call to Action -->
+
+<div class="rowaction" style="background-image:url(smartagric.jpg);">
+  <div>
+    <h1 id="joinus" style="padding-top: 40px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Are you interested ?</h1>
+    <div class="button" >
+      <button type="button")><a href="Joinus.html"></a>Join us</button>
+    </div>
+  </div>
+ 
+</div>
+<br>
+
+<!-- Key partner or stakeholders in the project -->
+<h1 style="text-align: center; font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif;color: rgb(98, 132, 163);">Key partners</h1>
+<p style="text-align: center;font-size:large ;"> Green Agribusiness works with the different partners across the globe to ensure the provision of smart solutions to improve livelihood through agriculture </p>
+<div> 
+  <img src="UN.png" alt="#" width="150" height="150" style="padding-right: 65px;"> 
+  <img src="Africanunion.png" alt="#" width="150" height="150" style="padding-right: 65px;">
+  <img src="US-Logo.png" alt="#" width="150" height="150" style="padding-right: 65px;"> 
+  <img src="fao.png" alt="#" width="150" height="150" style="padding-right: 65px;">
+  <img src="india.png" alt="#" width="150" height="150" style="padding-right: 65px;"> 
+  <img src="dda.png" alt="#" width="150" height="150" style="padding-right: 65px;">
+  
+</div>
+<br>
+<br>
+<br>
+
+<!-- footer -->
+<footer>
+  <div class="footer-container">
+      <div class="footer">
+          <!-- footer column 1 -->
+          <div class="footer-col">
+              <a href=""><img src="food.jpg" alt="food" height="150" width="150"></a>
+              <div class="socialmediaicons">
+                  <img src="Facebook fit.jpg" alt="facebook" width="27" height="25">
+                  <img src="linkedIn.png" alt="facebook" width="27" height="25">
+                  <img src="Instagram.png" alt="facebook" width="27" height="25">
+                  <img src="youtube.png" alt="facebook" width="27" height="25">
+                  <img src="twitter.png" alt="facebook" width="27" height="25">
+                </div>
+          </div>
+  <!-- contact information -->
+      <div class="footer-col">
+          <h3>Contact Info</h3>
+          <a href=""><img src="email.png" alt="email-address" width="20" height="20" >contact@greenagribusiness.com</a>
+          <a href=""><img src="phone-call.png" alt="phone" height="20" width="20"> (+46) 771296207</a>
+          <a href=""><img src="address.png" alt="address" height="20" width="20"> P.O.Box 165, Malmo, Sweden</a>
+          
+      </div>
+      <!-- support links -->
+      <div class="footer-col">
+          <h3>Support Links</h3>
+          <a href="home.html">Home</a>
+          <a href="About.html">About us</a>
+          <a href="services.html">Services</a>
+          <a href="blogs.html">Blogs</a>
+          <a href="products.html">products</a>
+      </div>
+     
+      <!-- Newsletter -->
+      <div class="footer-email-form">
+          <h3>Join our newsletter</h3>
+          <input type="email" placeholder="Enter your email address" id="footer-email">
+      <input type="submit" value="Sign up"
+      id="footer-email-btn">
+      </div>
+                </div>
+                <!-- copyrights -->
+                <hr>
+                <p style="color:white; font-size: medium; text-align: center;padding-top: 10px">&copy;2022 All rights Reserved Green Agribusiness </p>
+  </div>        
+</footer>
+
 </body>
+
 </html>
