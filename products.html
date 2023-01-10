@@ -79,7 +79,24 @@ li a:hover {
       margin: 10px;
       float: right;
     }  
-        /* End of button CSS */
+        /* styling for the breadcrumbs */
+.breadcrumbnav {
+  list-style: none;
+  text-align: center;
+  background-image: url(smart.jpg);
+  height: 50vh
+}
+.breadcrumbnav li {
+  display: inline-block;
+  float: none;
+}
+.breadcrumbnav li::after {
+  content: " >> ";
+}
+.breadcrumbnav li:last-child::after {
+  content: " ";
+}
+/* End of breadcrumb*/
 
 
         /* code for the all columns for the socials */
@@ -221,8 +238,16 @@ table,th,td {
     </div>
 <!-- End of code for the navigation and socialmedia -->
 
+<div id="container">
+  <ol class="breadcrumbnav">            
+    <h1 style="padding-top: 120px;font-size: x-large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Blogs </h1>
+    <li ><a href="#"> Home >> Blogs </a></li>           
+  </ol>
+</div>
+<!-- End of breadcrumbs -->
+
 <!-- banner -->
-<p style="text-align: center"> <img src="food.jpg" alt="agricultural photo" width="100%" height="350"></p>
+<!-- <p style="text-align: center"> <img src="food.jpg" alt="agricultural photo" width="100%" height="350"></p> -->
 <br>
 <!-- product heading -->
 <h1 style= "color:darkolivegreen;text-align:center;border:2px dodgerblue;"> PRODUCT LISTS </h1>
