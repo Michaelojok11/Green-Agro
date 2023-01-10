@@ -29,9 +29,9 @@ li {
     }
     /* logo css */
     .logo {
-      flex: 1; /* additionally, equal width */
+    /* additionally, equal width */
       padding: 1em;
-      margin: 10px;
+      margin: 1px;
       float: left;
     }  
 
@@ -50,9 +50,7 @@ li {
       list-style-type:none;
       margin: 0;
       padding: 0;
-      overflow: hidden;
-      background-color:rgb(104, 141, 114);
-      
+      overflow: hidden;   
     }
 
     /* list item CSS */
@@ -63,13 +61,13 @@ li {
     /* CSS for the a tag in the list item */
     li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 10px;
   text-decoration: none;
 }
 li a:hover {
-  background-color: #111778;
+  background-color: rgb(104, 141, 114);
   color: white;
 }
 
@@ -82,6 +80,25 @@ li a:hover {
       margin: 10px;
       float: right;
     }  
+
+    /* styling for the breadcrumbs */
+.breadcrumbnav {
+  list-style: none;
+  text-align: center;
+  background-image: url(image3.jpg) ;
+  height: 50vh
+}
+.breadcrumbnav li {
+  display: inline-block;
+  float: none;
+}
+.breadcrumbnav li::after {
+  content: " >> ";
+}
+.breadcrumbnav li:last-child::after {
+  content: " ";
+}
+/* End of breadcrumb*/
 
     /*rows and columns for Mission, Vision and Core values */
       .row {
@@ -250,7 +267,7 @@ li a:hover {
   <!-- logo and navigation bar-->
     <div class="row">
       <!-- colum 1 -->
-        <div class="logo"> <img src="Logo1.jpg" alt="Green Agro Logo" width="250" height="90"></div>
+        <div class="logo"> <img src="Logo1.jpg" alt="Green Agro Logo" width="150" height="60"></div>
 <!-- column 2 -->
         <div class="navigation"> 
           <ul> 
@@ -290,8 +307,16 @@ li a:hover {
 
         </div>
     </div>
+    <!-- breadcrumbs -->
+    <div id="container">
+      <ol class="breadcrumbnav">            
+        <h1 style="padding-top: 120px;font-size: x-large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> About</h1>
+        <li ><a href="#"> Home >> About Us </a></li>           
+      </ol>
+    </div>
+    <!-- End of breadcrumbs -->
 
-<p style="text-align: center"> <img src="image3.jpg" alt="agricultural photo" width="100%" height="250"></p>
+<!-- <p style="text-align: center"> <img src="image3.jpg" alt="agricultural photo" width="100%" height="250"></p> -->
 <h1 style= "color:darkolivegreen;text-align:center;border:2px dodgerblue;"> SERVICES </h1>
 <p style="text-align: center;font-size:large ;"> Green Agribusiness offers various services across the globe ranging from smart agricultural solutions to selling of fertilizers and other agricultural solutions </p>
 
