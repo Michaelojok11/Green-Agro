@@ -20,8 +20,6 @@ float: left;
   display: table;
   clear: both;
 }
-
-/* start of the navigation menu */
 li {
   color: white;
 }
@@ -31,7 +29,7 @@ li {
     }
     /* logo css */
     .logo {
-       /* additionally, equal width */
+    /* additionally, equal width */
       padding: 1em;
       margin: 1px;
       float: left;
@@ -52,7 +50,7 @@ li {
       list-style-type:none;
       margin: 0;
       padding: 0;
-      overflow: hidden;           
+      overflow: hidden;   
     }
 
     /* list item CSS */
@@ -83,25 +81,65 @@ li a:hover {
       float: right;
     }  
 
+    /* styling for the breadcrumbs */
+.breadcrumbnav {
+  list-style: none;
+  text-align: center;
+  background-image: url(smartagric.jpg) ;
+  height: 50vh
+}
+.breadcrumbnav li {
+  display: inline-block;
+  float: none;
+}
+.breadcrumbnav li::after {
+  content: " >> ";
+}
+.breadcrumbnav li:last-child::after {
+  content: " ";
+}
+/* End of breadcrumb*/
+
     /*rows and columns for Mission, Vision and Core values */
       .row {
-      display: flex; /*  */
+      display: flex; /* equal height of the children */
     }
-    .mission {
+    .service1 {
       flex: 1; /* additionally, equal width */
       padding: 1em;
       border: solid;
       margin: 10px;
       background-color: #beeab0;
     }   
-    .vision {
+    .service2 {
       flex: 1; /* additionally, equal width */
       padding: 1em;
       border: solid;
       margin: 10px;
       background-color:beige;
     }   
-    .corevalues {
+    .service3 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: #beeab0;
+    } 
+    .service4 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color: #beeab0;
+    }   
+    .service5 {
+      flex: 1; /* additionally, equal width */
+      padding: 1em;
+      border: solid;
+      margin: 10px;
+      background-color:beige;
+    }   
+    .service6 {
       flex: 1; /* additionally, equal width */
       padding: 1em;
       border: solid;
@@ -140,15 +178,8 @@ li a:hover {
           } 
           /* End of button CSS */
 
- /* Call to Action CSS */
-          .rowaction {
-  text-align: center;
-  background-image: url(smartagric.jpg) ;
-  height: 30vh
-          }
-
-/* footer */
-
+          /* footer */
+         
         .footer-container {
             background-color: rgb(104, 141, 114);
             padding-bottom: 3rem;
@@ -215,12 +246,12 @@ li a:hover {
             transition: all 0.4s ease-out;
         }
         /* End of footer */
-        
+
     </style>
-    <title> Website of Green Agro</title>
+    <title> Services for Green Agro</title>
 </head>
 <body>
-  <!-- code for top bar -->
+  <!-- code for the top bar -->
   <div class="topbar">
     <div class="topbar1">
       <img src="telephone.png" alt="#" height="20" width="20"> (+46) 771296207 </a>
@@ -257,10 +288,10 @@ li a:hover {
             <!-- list item5 -->
              <li>
               <a href="contactus.html" style="text-decoration: none;">CONTACT US</a>
-            </li> 
+            </li>
             <li>
               <a href="products.html" style="text-decoration: none;">PRODUCTS</a>
-            </li> 
+            </li>
             
           </ul>
         
@@ -276,89 +307,20 @@ li a:hover {
 
         </div>
     </div>
-
-<p style="text-align: center"> <img src="image3.jpg" alt="agricultural photo" width="100%" height="450"></p>
-<h1 style= "color:darkolivegreen;text-align:center;border:2px dodgerblue;"> GREEN AGRIBUSINESS </h1>
-<p style="text-align: center;font-size:large ;"> Green Agribusiness is a company that deals in agriculture by using smart technology. The company works towards finding solutions to maximize the economic, environmental and social sustainability of agriculture and agroindustry </p>
-<div class="row">
-    <div class="column">
-        <p style="text-align: center;"><img src="planting.png" alt= "planting trees" width="18%;"></p>
+    <!-- breadcrumbs -->
+    <div id="container">
+      <ol class="breadcrumbnav">            
+        <h1 style="padding-top: 120px;font-size: x-large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Services</h1>
+        <li ><a href="#"> Home >> Services </a></li>           
+      </ol>
     </div>
-    <div class="column">
-        <p style="text-align:center"><img src="planting.png" alt="planting trees" width="18%;"></p>
-        </div>
-        <div class="column">
-            <p style="text-align: center;"><img src="planting.png" alt="planting trees" width="18%"></p>
-        </div>
-</div>
+    <!-- End of breadcrumbs -->
 
-    <div class="row">
-      <!-- mission row start-->
-      <div class="mission">
-        <div style="position:relative; top: -40px;">
-          <h2 style="padding-top:5px;"> OUR MISSION<hr></h2>
-        </div>
-        <div style="position: relative; top: -40px;text-align: center">
-          To be the Number one solution for smart and sustainable agriculture in Europe and Africa button </div>
-        </div>
-        <!-- mission row end -->
 
-       <!-- vision row start -->
-      <div class="vision">
-        <div style="position: relative; top: -40px ;">
-          <h2 style="padding-top: 5px;">OUR VISION<hr></h2>
-          </div>
-          <div style="position: relative; top: -40px; text-align: center;">
-            To improve rural livelihoods and create value by providing sustainable food systems in Europe and Africa 
-            <br> Working to offer solutions at the intersection of farming and climate </div></div>
-          <!-- vision row end -->
 
-      <!-- core values row -->
-      <div class="corevalues">
-        <div style="position: relative; top: -40px;">
-          <h2 style="padding-top: 5px;">CORE VALUES<hr></h2></div><div style="position: relative; top: -40px;text-align: center"> Integrity 
-            <br> Commitment <br> Professional, effective and informed by Science</div></div>
-      <hr>
-    </div>
-    <!-- button -->
-<div>
-    <div class="row">
-        <div class="button1"><button type="button" onclick="alert('Responsibility')">READMORE</button></div>
-        <div class="button2"><button type="button" onclick="alert('Integrity')">READMORE</button></div>
-        <div class="button3"><button type="button" onclick="alert('Leading in agricultural innovation')">READMORE</button></div>
-</div>
-<br>
-<br>
 
-<!-- Call to Action -->
 
-<div class="rowaction" style="background-image:url(smartagric.jpg);">
-  <div>
-    <h1 id="joinus" style="padding-top: 40px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Are you interested ?</h1>
-    <div class="button" >
-      <button type="button")><a href="Joinus.html"></a>Join us</button>
-    </div>
-  </div>
- 
-</div>
-<br>
-
-<!-- Key partner or stakeholders in the project -->
-<h1 style="text-align: center; font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif;color: rgb(98, 132, 163);">Key partners</h1>
-<p style="text-align: center;font-size:large ;"> Green Agribusiness works with the different partners across the globe to ensure the provision of smart solutions to improve livelihood through agriculture </p>
-<div> 
-  <img src="UN.png" alt="#" width="150" height="150" style="padding-right: 65px;"> 
-  <img src="Africanunion.png" alt="#" width="150" height="150" style="padding-right: 65px;">
-  <img src="US-Logo.png" alt="#" width="150" height="150" style="padding-right: 65px;"> 
-  <img src="fao.png" alt="#" width="150" height="150" style="padding-right: 65px;">
-  <img src="india.png" alt="#" width="150" height="150" style="padding-right: 65px;"> 
-  <img src="dda.png" alt="#" width="150" height="150" style="padding-right: 65px;">
-  
-</div>
-<br>
-<br>
-<br>
-
+    
 <!-- footer -->
 <footer>
   <div class="footer-container">
@@ -402,9 +364,12 @@ li a:hover {
                 </div>
                 <!-- copyrights -->
                 <hr>
-                <p style="color:white; font-size: medium; text-align: center;padding-top: 10px">&copy;2022 All rights Reserved Green Agribusiness </p>
+                <p style="color:white; font-size: medium; text-align: center;padding-top: 10px;">
+                  &copy;2022 All rights Reserved Green Agribusiness </p>
   </div>        
 </footer>
+<!-- end of footer -->
+
 
 </body>
 
