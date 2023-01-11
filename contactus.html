@@ -100,17 +100,17 @@ li a:hover {
 }
 /* End of breadcrumb*/
 
-    /*rows and columns for Mission, Vision and Core values */
+    /*rows */
       .row {
       display: flex; 
     }
-    .service1 {
+    .row1 {
       flex: 1; 
       padding: 1em;
       border: solid;
       margin: 10px;
      }   
-    .service2 {
+    .row2 {
       flex: 1; 
       padding: 1em;
       border: solid;
@@ -184,6 +184,10 @@ li a:hover {
             background-color: skyblue;
             transition: all 0.4s ease-out;
         }
+        hr {
+          height: 5px;
+          background-color: white;
+        }
         /* End of footer */
 
     </style>
@@ -249,8 +253,8 @@ li a:hover {
     <!-- breadcrumbs -->
     <div id="container">
       <ol class="breadcrumbnav">            
-        <h1 style="padding-top: 120px;font-size: x-large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Services</h1>
-        <li ><a href="#"> Home >> Services </a></li>           
+        <h1 style="padding-top: 120px;font-size: x-large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Contact Us</h1>
+        <li ><a href="#"> Home >> Contact Us </a></li>           
       </ol>
     </div>
     <!-- End of breadcrumbs -->
@@ -258,17 +262,16 @@ li a:hover {
 <!-- row 1 -->
     <div class="row">
       <!-- mission row start-->
-      <div class="service1">
+      <div class="row1">
         <div style="position:relative; top: -40px;">
-          <h2 style="padding-top:5px;"> Service 1<hr></h2>
+          <h2 style="padding-top:5px; text-align: left;"> Contact Us</h2>
+          <h1>Have a question for us? Let us know & we will respond!</h1>
         </div>
-        <div style="position: relative; top: -40px;text-align: center">
-          To be the Number one solution for smart and sustainable agriculture in Europe and Africa button </div>
         </div>
         <!-- mission row end -->
 
        <!-- row 2-->
-      <div class="service2">
+      <div class="row2">
         <div style="position: relative; top: -40px ;">
           <h2 style="padding-top: 5px;">Service 2<hr></h2>
           </div>
@@ -277,10 +280,9 @@ li a:hover {
             <br> Working to offer solutions at the intersection of farming and climate </div></div>
       
     </div>
-  
-
 
 <br>
+
 <!-- footer -->
 <footer>
   <div class="footer-container">
@@ -323,6 +325,7 @@ li a:hover {
       </div>
                 </div>
                 <!-- copyrights -->
+                <br><br>
                 <hr>
                 <p style="color:white; font-size: medium; text-align: center;padding-top: 10px;">
                   &copy;2022 All rights Reserved Green Agribusiness </p>
